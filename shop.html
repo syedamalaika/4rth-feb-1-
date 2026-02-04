@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | CELESTIQUE</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .shop-header {
+            padding: 150px 0 60px;
+            text-align: center;
+        }
+
+        .filter-bar {
+            background: var(--bg-warm);
+            padding: 20px 0;
+            margin-bottom: 80px;
+            position: sticky;
+            top: 80px;
+            z-index: 900;
+        }
+
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .filter-item {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .filter-item.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: var(--text-ink);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" class="scrolled">
+        <nav class="nav-links">
+            <a href="shop.html" class="nav-link active">Shop</a>
+            <a href="journal.html" class="nav-link">Journal</a>
+        </nav>
+        <a href="index.html" class="logo">CELESTIQUE</a>
+        <div class="nav-actions">
+            <a href="about.html" class="nav-link">About</a>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+    </header>
+
+    <div class="shop-header container">
+        <h1 style="font-size: 64px;">Collections</h1>
+        <p style="font-family: var(--font-serif); font-style: italic; font-size: 20px; color: var(--text-muted);">
+            Explore our curated world of delicate brilliance.</p>
+    </div>
+
+    <div class="filter-bar">
+        <div class="container filter-container">
+            <span class="filter-item active" data-filter="all">All</span>
+            <span class="filter-item" data-filter="rings">Rings</span>
+            <span class="filter-item" data-filter="necklaces">Necklaces</span>
+            <span class="filter-item" data-filter="earrings">Earrings</span>
+            <span class="filter-item" data-filter="bespoke">Bespoke</span>
+        </div>
+    </div>
+
+    <section class="container products-section" style="padding-top: 0;">
+        <div class="product-grid" id="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <!-- Rings -->
+            <a href="product-details.html" class="product-card" data-category="rings">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2070&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Eternal Solitaire Ring</h3>
+                    <p class="product-price">$2,400</p>
+                </div>
+            </a>
+            <a href="product-details.html" class="product-card" data-category="rings">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?q=80&w=1970&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Sapphire Muse Band</h3>
+                    <p class="product-price">$4,100</p>
+                </div>
+            </a>
+            <a href="product-details.html" class="product-card" data-category="rings">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?q=80&w=2070&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Rose Gold Halo</h3>
+                    <p class="product-price">$1,950</p>
+                </div>
+            </a>
+            <a href="product-details.html" class="product-card" data-category="rings">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1598560912005-5976593c3076?q=80&w=2070&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Celestial Wrap Ring</h3>
+                    <p class="product-price">$1,200</p>
+                </div>
+            </a>
+
+            <!-- Necklaces -->
+            <a href="product-details.html" class="product-card" data-category="necklaces">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?q=80&w=1974&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Silk Gold Necklace</h3>
+                    <p class="product-price">$1,850</p>
+                </div>
+            </a>
+            <a href="product-details.html" class="product-card" data-category="necklaces">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1611085583191-a3b1318d1221?q=80&w=1974&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Diamond Drop Chain</h3>
+                    <p class="product-price">$2,100</p>
+                </div>
+            </a>
+            <a href="product-details.html" class="product-card" data-category="necklaces">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=2070&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Luxe Emerald Pendant</h3>
+                    <p class="product-price">$5,200</p>
+                </div>
+            </a>
+
+            <!-- Earrings -->
+            <a href="product-details.html" class="product-card" data-category="earrings">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1630019852942-f89202989a59?q=80&w=1968&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Lune Pearl Earrings</h3>
+                    <p class="product-price">$920</p>
+                </div>
+            </a>
+            <a href="product-details.html" class="product-card" data-category="earrings">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1974&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Aura Diamond Cuff</h3>
+                    <p class="product-price">$3,200</p>
+                </div>
+            </a>
+            <a href="product-details.html" class="product-card" data-category="earrings">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1596944214946-10e825a9793a?q=80&w=1976&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Crescent Diamond Hoops</h3>
+                    <p class="product-price">$1,150</p>
+                </div>
+            </a>
+            <a href="product-details.html" class="product-card" data-category="earrings">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1635767790479-0db79550cc68?q=80&w=1974&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Minimalist Gold Studs</h3>
+                    <p class="product-price">$450</p>
+                </div>
+            </a>
+
+            <!-- Bespoke -->
+            <a href="product-details.html" class="product-card" data-category="bespoke">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?q=80&w=1974&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Custom Heritage Piece</h3>
+                    <p class="product-price">Consultation Required</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer same as index -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo">CELESTIQUE</div>
+                <p
+                    style="color: var(--text-muted); font-family: var(--font-serif); font-style: italic; font-size: 18px;">
+                    "Elegance is the only beauty that never fades."</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px; font-size: 14px;">CLIENT SERVICES</h4>
+                <ul style="list-style: none; font-size: 12px; line-height: 2.5; letter-spacing: 1px;">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Bespoke Service</a></li>
+                    <li><a href="#">Care Guide</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px; font-size: 14px;">ABOUT</h4>
+                <ul style="list-style: none; font-size: 12px; line-height: 2.5; letter-spacing: 1px;">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Craftsmanship</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Stores</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px; font-size: 14px;">FOLLOW US</h4>
+                <ul style="list-style: none; font-size: 12px; line-height: 2.5; letter-spacing: 1px;">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.filter-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const filter = item.getAttribute('data-filter');
+
+                // Update active state
+                document.querySelectorAll('.filter-item').forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+
+                // Filter products
+                document.querySelectorAll('.product-card').forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => { card.style.opacity = '1'; }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        setTimeout(() => { card.style.display = 'none'; }, 600);
+                    }
+                });
+            });
+        });
+
+        // Initialize fade-in effect via inline style for filtering logic compatibility
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.style.transition = 'opacity 0.6s ease';
+            card.style.opacity = '1';
+        });
+    </script>
+
+</body>
+
+</html>

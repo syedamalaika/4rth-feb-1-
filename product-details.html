@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | CELESTIQUE</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .pdp-container {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 100px;
+            padding-top: 150px;
+            padding-bottom: 100px;
+        }
+
+        .pdp-images {
+            display: flex;
+            gap: 20px;
+        }
+
+        .pdp-thumbs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 80px;
+        }
+
+        .pdp-thumb {
+            width: 80px;
+            height: 80px;
+            background: #EFEBE7;
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .pdp-thumb.active {
+            border-color: var(--accent-gold);
+        }
+
+        .pdp-main-img {
+            flex: 1;
+            background: #EFEBE7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+        }
+
+        .pdp-main-img img {
+            width: 80%;
+        }
+
+        .pdp-details h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .pdp-price {
+            font-family: var(--font-serif);
+            font-size: 32px;
+            color: var(--accent-gold);
+            margin-bottom: 30px;
+        }
+
+        .pdp-desc {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .pdp-option {
+            margin-bottom: 30px;
+        }
+
+        .pdp-option label {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .size-grid {
+            display: flex;
+            gap: 10px;
+        }
+
+        .size-btn {
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: transparent;
+            cursor: pointer;
+            font-size: 12px;
+            transition: var(--transition);
+        }
+
+        .size-btn.active,
+        .size-btn:hover {
+            border-color: var(--text-ink);
+            background: var(--text-ink);
+            color: var(--white);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" class="scrolled">
+        <nav class="nav-links">
+            <a href="shop.html" class="nav-link active">Shop</a>
+            <a href="journal.html" class="nav-link">Journal</a>
+        </nav>
+        <a href="index.html" class="logo">CELESTIQUE</a>
+        <div class="nav-actions">
+            <a href="about.html" class="nav-link">About</a>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+    </header>
+
+    <main class="container pdp-container">
+        <div class="pdp-images">
+            <div class="pdp-thumbs">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2070&auto=format&fit=crop"
+                    class="pdp-thumb active">
+                <img src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?q=80&w=2070&auto=format&fit=crop"
+                    class="pdp-thumb">
+                <img src="https://images.unsplash.com/photo-1598560912005-5976593c3076?q=80&w=2070&auto=format&fit=crop"
+                    class="pdp-thumb">
+            </div>
+            <div class="pdp-main-img">
+                <img
+                    src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=2070&auto=format&fit=crop">
+            </div>
+        </div>
+
+        <div class="pdp-details">
+            <span
+                style="font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-muted);">Collections
+                / Rings</span>
+            <h1>Eternal Solitaire Ring</h1>
+            <p class="pdp-price">$2,400</p>
+            <p class="pdp-desc">"A symbol of singular beauty, hand-crafted with a conflict-free diamond and 18k recycled
+                gold. Designed to be cherished for lifetimes."</p>
+
+            <div class="pdp-option">
+                <label>Select Size</label>
+                <div class="size-grid">
+                    <button class="size-btn">5</button>
+                    <button class="size-btn active">6</button>
+                    <button class="size-btn">7</button>
+                    <button class="size-btn">8</button>
+                </div>
+            </div>
+
+            <div class="pdp-option">
+                <label>Material</label>
+                <div style="display: flex; gap: 15px;">
+                    <div
+                        style="width: 30px; height: 30px; border-radius: 50%; background: #C5A059; cursor: pointer; border: 1px solid var(--text-ink);">
+                    </div>
+                    <div style="width: 30px; height: 30px; border-radius: 50%; background: #E5C1CD; cursor: pointer;">
+                    </div>
+                    <div style="width: 30px; height: 30px; border-radius: 50%; background: #C0C0C0; cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+
+            <a href="cart.html" class="btn btn-dark" style="width: 100%; text-align: center; margin-top: 20px;">Add To
+                Collection</a>
+
+            <div style="margin-top: 60px; border-top: 1px solid rgba(0,0,0,0.05); padding-top: 30px;">
+                <h4 style="font-size: 12px; margin-bottom: 20px;">PRODUCT ETHOS</h4>
+                <p style="font-size: 13px; color: var(--text-muted); font-family: var(--font-serif);">Responsibly
+                    sourced GIA certified diamond. 18k solid gold. Lifetime warranty and complimentary polishing
+                    services included.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Suggested Section -->
+    <section class="container" style="padding-bottom: 100px;">
+        <h2 style="font-size: 24px; text-align: center; margin-bottom: 60px;">COMPLETE THE LOOK</h2>
+        <div class="product-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <a href="#" class="product-card">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?q=80&w=1974&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Silk Gold Necklace</h3>
+                    <p class="product-price">$1,850</p>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1630019852942-f89202989a59?q=80&w=1968&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Lune Pearl Earrings</h3>
+                    <p class="product-price">$920</p>
+                </div>
+            </a>
+            <a href="#" class="product-card">
+                <div class="product-img"><img
+                        src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1974&auto=format&fit=crop">
+                </div>
+                <div class="product-info">
+                    <h3>Aura Diamond Cuff</h3>
+                    <p class="product-price">$3,200</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-logo">CELESTIQUE</div>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px; font-size: 14px;">CLIENT SERVICES</h4>
+                <ul style="list-style: none; font-size: 12px; line-height: 2.5;">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px; font-size: 14px;">ABOUT</h4>
+                <ul style="list-style: none; font-size: 12px; line-height: 2.5;">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Craftsmanship</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px; font-size: 14px;">FOLLOW</h4>
+                <ul style="list-style: none; font-size: 12px; line-height: 2.5;">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
